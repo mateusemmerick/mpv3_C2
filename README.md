@@ -37,7 +37,7 @@ automaticamente após uma mudança no código fonte.
 (env)$ flask run --host 0.0.0.0 --port 2000 --reload
 ```
 
-Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+Abra o [http://localhost:5000/#/](http://localhost:2000/#/) no navegador para verificar o status da API em execução.
 
 Essa API também poderá ser executada via docker, utilizando os seguintes comandos (necessário possuir docker desktop instalado):
 
