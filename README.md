@@ -27,7 +27,9 @@ Este comando instala as dependências/bibliotecas, descritas no arquivo `require
 Para executar a API  basta executar:
 
 ```
-(env)$ 
+(env)$ flask run --host 0.0.0.0 --port 2000
+```
+
 Em modo de desenvolvimento é recomendado executar utilizando o parâmetro reload, que reiniciará o servidor
 automaticamente após uma mudança no código fonte. 
 
@@ -35,15 +37,18 @@ automaticamente após uma mudança no código fonte.
 (env)$ flask run --host 0.0.0.0 --port 2000 --reload
 ```
 
-Abra o [http://localhost:2000/#/](http://localhost:2000/#/) no navegador para verificar o status da API em execução.
+Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
 
 Essa API também poderá ser executada via docker, utilizando os seguintes comandos (necessário possuir docker desktop instalado):
 
 Criação da imagem
+
 ```
 docker build . -t <Nome da imagem>
 ```
+
 Execução da imagem
+
 ```
 docker run -d -p 2000:2000 <Nome da imagem>
 ```
